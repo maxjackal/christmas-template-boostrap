@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVSHA Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --bg-background: #f5e8df;
+            --ff-ffamily: helvetica, 'helvetica neue', arial, verdana, sans-serif;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #25353b;
+        }
+
+        .body-background {
+            background-color: var(--bg-background);
+            font-family: var(--ff-ffamily)
+        }
+
+        .logo {
+            width: 120px;
+            height: 30px;
+            margin-top: 30px;
+
+        }
+
+        .top {
+            background-image: url(https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/49281606740413504.png);
+            height: 450px;
+
+
+        }
+
+
+        .nav-menu a {
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .nav-logo ul {
+            list-style: none;
+            padding: 25;
+            color: black;
+        }
+
+        .nav-logo li {
+            margin: 0 10px;
+
+        }
+
+        .christmas-greeting {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .christmas-offer {
+            font-weight: bold;
+
+        }
+
+        .btn-primary {
+            --bs-btn-bg: #25353b;
+            --bs-btn-border-color: #252525;
+            --bs-btn-hover-bg: #8b8e90;
+            --bs-btn-hover-border-color: #8b8e90;
+            --bs-btn-active-bg: #252729;
+            --bs-btn-active-border-color: #252729;
+
+        }
+
+        .second-page {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .second-page-title h1 {
+            font-size: 36px;
+        }
+
+        .gallery {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-1 {
+            grid-area: item-1;
+        }
+
+        .item-2 {
+            grid-area: item-2;
+        }
+
+        .item-3 {
+            grid-area: item-3;
+        }
+
+        .item-4 {
+            grid-area: item-4;
+        }
+
+        .item-5 {
+            grid-area: item-5;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'item-1 item-1 item-2 item-4'
+                'item-1 item-1 item-3 item-5';
+            gap: 4px;
+            padding: 15px;
+
+        }
+
+        .grid-container>div {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .grid-container>div>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .choose {
+            margin-bottom: 30px;
+            margin-left: 5%;
+            width: 75%;
+        }
+
+        .footer {
+            background-color: #25353b;
+            margin-bottom: 50px;
+        }
+
+        .end-text {
+            color: var(--bg-background);
+            line-height: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+
+
+        }
+
+
+        .second-page-title h1 {
+            font-size: 49px;
+        }
+
+        .contacts-info>ul>li {
+            width: max-content;
+            line-height: 150%;
+            color: #f5e8df;
+            text-align: center;
+
+        }
+
+        .contacts-info>ul>li>a {
+            text-decoration: none;
+            color: #f5e8df;
+        }
+
+        .logo-end {
+            width: 120px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: -90px;
+
+        }
+    </style>
+</head>
+
+<body class="body-background">
+    <header>
+        <div class="container">
+            <div class="d-flex flex-column align-items-center">
+                <div class="div-logo mb-3">
+                    <img class="logo"
+                        src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/97501606204210581.png">
+                </div>
+                <div class="navbar">
+                    <nav class="header-nav d-flex justify-content-between ">
+                        <div class="nav-menu">
+                            <a href="#">Cakes</a>
+                            <a href="#">Reviews</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Contacts</a>
+                        </div>
+                        <div class="nav-logo ml-auto ">
+                            <ul class="d-flex ">
+                                <li><a href="#"><i style="color: black;" class="fab fa-facebook fa-lg"></i></a></li>
+                                <li><a href="#"><i style="color: black;" class="fab fa-instagram fa-lg"></i></a></li>
+                                <li><a href="#"><i style="color: black;" class="fab fa-youtube fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="top d-flex  align-items-center">
+                <div class="col-md-6 offset-md-3 text-center ">
+                    <h2 class="christmas-greeting p-2 fs-1">Sweat Christmas!</h2>
+                    <p class="christmas-message ">
+                        Christmas greetings and all good wishes for <br> your health and happiness in the coming year!
+                        <br>
+                        <span class="christmas-offer text-center ">
+                            We didn't leave you without a present this Christmas! <br>
+                            We give a set of gingerbread when
+                            ordering any of our products!
+                        </span>
+                    </p>
+                    <button class="btn btn-primary view-toppings-btn">View toppings</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="second-page">
+            <div class="second-page-title">
+                <h1>What kind of cakes will we <br> make?</h1>
+            </div>
+
+            <div class="gallery">
+                <div class="grid-container">
+                    <div class="item-1">
+                        <img style="width: 350px; height: 350px;"
+                            src="  https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/78701606214688344.png">
+                    </div>
+                    <div class="item-2">
+                        <img style="width: 170x; height: 173px;"
+                            src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/21081606214532376.png">
+                    </div>
+                    <div class="item-3">
+                        <img style="width: 170x; height: 173px;"
+                            src=" https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/16591606214540472.png">
+                    </div>
+                    <div class="item-4">
+                        <img style="width: 170x; height: 173px;"
+                            src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/21081606214532376.png">
+                    </div>
+                    <div class="item-5">
+                        <img style="width: 170x; height: 173px;"
+                            src=" https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/16591606214540472.png">
+                    </div>
+                </div>
+            </div>
+            <div class="end-title d-flex  justify-content-center text-center ">
+                <h1>Why clients choose us</h1>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+                <div class="benefits d-flex flex-row justify-content-between">
+                    <div class="icon d-flex flex-column justify-content-center text-center align-items-center ">
+                        <a href="#"><img style="margin: 0 70px; width: 50px; height: 50px;"
+                                src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/98251606221191836.png"
+                                title="Cake"></a> <br>
+                        <p>Individual cake <br> sketches</p>
+                    </div>
+                    <div class="icon d-flex flex-column justify-content-center text-center align-items-center ">
+                        <a href="#"><img style="margin: 0 70px; width: 50px; height: 50px;"
+                                src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/40401606221203726.png"
+                                title="Time"></a><br>
+                        <p>We will make <br> in 24 hours</p>
+
+                    </div>
+                    <div class="icon d-flex flex-column justify-content-center text-center align-items-center ">
+                        <a href="#"><img style="margin: 0 70px; width: 50px; height: 50px;"
+                                src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/47951606221208940.png"
+                                title="certified"></a><br>
+                        <p>Certified <br> products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer d-flex flex-row w-100">
+        <div class="contacts w-75 d-flex flex-column justify-content-center align-items-center">
+            <div class="contacts-info w-50 py-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="end-text w-50 d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2>Come to us!</h2>
+                </div>
+                <ul>
+                    <li> Dnipro, st. Chkalova 42</li>
+                    <li>Every day from 9:00 to 21:00</li>
+                    <li><a href="#">+380000000000</a></li>
+                    <li><a href="#"> cake_levsha@gmail.com</a></li>
+                </ul>
+                <div class="div-logo-end w-50 d-flex flex-column justify-content-center align-items-center">
+                    <img class="logo-end" width="128px"
+                        src="https://tlr.stripocdn.email/content/guids/CABINET_b53322c437eaddfd44e8de9e68df679e/images/15411606210355591.png">
+                </div>
+            </div>
+        </div>
+        <div class="map w-50">
+            <iframe style="height: 100%; width:70%; "
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.801119319972!2d29.04721087551397!3d41.00772601945973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab80788cf890d%3A0x5737778ff731dee1!2skukis!5e0!3m2!1str!2str!4v1703110271141!5m2!1str!2str"
+                width="700" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
